@@ -1,27 +1,193 @@
-.logon-container {
-    width: 100%;
-    max-width: 1120px;
-    height: 100vh;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+body{
+    background-color: #F2F8F4;
+    height: 100%;
 }
 
-.logon-container section.form {
-    width: 100%;
-    max-width: 350px;
+
+.menu{
+    background-color: #83DEA3;
+    opacity: 0.9;
+    height: 7vh;
+}
+
+.buttonsMenu{
+    float: right;
     margin-right: 30px;
 }
 
-.logon-container section.form form {
-    margin-top: 100px;
+.buttonMenu {
+    background-color: #4EA16B;
+    margin-top: 5px;
+    margin-right: 20px;
+    border: 0px;
+    text-align: center;
 }
 
-.logon-container section.form form h1 {
-    font-size: 32px;
-    margin-bottom: 32px; 
+.textButtonMenu {
+    margin: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #fff;
+}
+
+.boxLogo{
+    text-align: center;
+    width: 100%;
+}
+
+.logo{
+    text-align: center;
+    height: 427px;
+    width: 427px;
+}
+
+.container{
+    padding: 96px;
+    padding-top: 20px;
+}
+
+.titleSobre{
+    font-size: 20px;
+}
+
+.descSobre{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.descSobre p{
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.boxEntrar {
+    margin-top: 70px;
+    flex-direction: row;
+}
+
+.boxLogin{
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.logar{
+    background-color: #fff;
+    width: 500px;
+    height: 400px;
+    margin-top: 50px;
+    float: left;
+}
+
+.boxLogoLogin{
+    text-align: center;
+    width: 100%;
+}
+
+.logoLogin{
+    text-align: center;
+    height: 227px;
+    width: 227px;
+    margin-top: -30px;
+}
+
+.formLogar{
+    margin: 40px;
+    margin-bottom: 50px;
+    margin-top: -20px;
+}
+
+.formLogar input{
+    margin-bottom: 20px;
+    border-color: #1AAA4C;
+    border-radius: 40px;
+    background-color: #F2F8F4;
+}
+
+.formLogar button{
+    float: right;
+    margin-right: 30px;
+    background-color: #009688;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.image{
+    margin-left: 90px;
+    width: 500px;
+    height: 368px;
+    margin-top: 50px;
+    float: left;
+}
+
+.boxImageLogin{
+    text-align: center;
+    width: 100%;
+}
+
+.imageLogin{
+    text-align: center;
+    height: 478px;
+    width: 617px;
+    margin-top: -30px;
 }
 
 
+.boxCadastrar{
+    margin-top: 700px;
+    align-items: center;
+}
+
+.boxCadastro{
+    margin-top: 200px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.cadastrar{
+    background-color: #fff;
+    width: 1000px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 95px;
+    
+}
+
+
+.formCadastrar{
+    margin-bottom: 20px;
+    border-color: #1AAA4C;
+    border-radius: 40px;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.input{
+    margin-bottom: 20px;
+    border-color: #1AAA4C;
+    border-radius: 40px;
+    background-color: #F2F8F4;
+}
+
+.inputRadio{
+    margin-bottom: 20px;
+    border-color: #1AAA4C;
+    border-width: 5px;
+    float: left;
+    margin-right: 100px;
+}
+
+.formCadastrar button{
+    float: right;
+    margin-right: 30px;
+    background-color: #009688;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
