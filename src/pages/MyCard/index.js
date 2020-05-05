@@ -16,12 +16,11 @@ import PriorityHighIcon from '@material-ui/icons/PriorityHigh';
 
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Button from '@material-ui/core/Button';
-import Box from '@material-ui/core/Box';
-import { positions } from '@material-ui/system';
 
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
+
+import logo from '../../assets/1.png';
 
 
 import 'typeface-roboto';
@@ -42,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#83DEA3',
   },
   menu_titulo: {
-    fontFamily: 'Source Sans Pro',
+
     fontWeight: 'bold',
     fontSize: '15px',
     letterSpacing: '0.2em',
@@ -53,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
 
   },
   background_titulo: {
-    fontFamily: 'Source Sans Pro',
+
     fontWeight: 'bold',
     fontSize: '50px',
     textAlign: 'left',
@@ -79,10 +78,10 @@ const useStyles = makeStyles((theme) => ({
     lineHheight: 1.42,
     letterSspacing: 'normal',
     textAlign: 'left',
-    flexGrow: 1,
     marginTop: '78px',
     marginLeft: '69px',
     backgroundColor: '#f2f8f4',
+    display: 'flex',
   },
   presentText: {
     fontFamily: 'SourceSansPro',
@@ -112,6 +111,14 @@ const useStyles = makeStyles((theme) => ({
   button: {
     backgroundColor: '#4ea16b',
     color: '#ffffff',
+  },
+  titulo: {
+    fontFamily: 'SourceSansPro',
+    fontWeight: 'bold',
+    fontStretch: 'normal',
+    fontStyle: 'normal',
+    lineHeight: 1.43,
+    letterSpacing: 'normal',
   },
 
 }));
@@ -155,72 +162,62 @@ export default function MyCard() {
           <Button fullWidth className={classes.button}>Learn More</Button>
         </CardActions>
 
-        {/* <footer className={classes.footer}>
-          <Button variant="contained" fullWidth className={classes.button}>
-            Voltar para perfil
-          </Button>
-        </footer> */}
       </Card>
-      <main className={classes.content}>
-        <Container className={classes.container}>
-          <Grid container spacing={3}>
-            <Grid item xs={12}>
-              <Paper>
-                Meu Cartão Virtual
-              </Paper>
-            </Grid>
-            <Grid className={classes.presentText}>
+      <Grid container xs={10} sm={8} className={classes.content}>
+        <Grid container className={classes.container}>
+          <Grid item xs={12}>
+            <Typography variant="h2" className={classes.titulo} img>
+              Meu cartão virtual
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="body1" className={classes.presentText}>
               Esse é seu cartão de apresentação para os demais participantes do evento.
               Preenche-o com suas preferências e, principalmente,
               diga que tipo de network você procura.
-            </Grid>
-            <Grid className={classes.presentCard} item xs={12}>
-              <Paper>
-                <Grid container spacing={2}>
-                  <Grid item xs={12} sm container>
-                    <Grid item xs container direction="column" spacing={2}>
-                      <Grid item xs>
-                        <Grid item>
-                          <ButtonBase className={classes.image}>
-                            <img className={classes.img} alt="complex" src="/static/images/grid/complex.jpg" />
-                          </ButtonBase>
-                        </Grid>
-                        <Typography gutterBottom variant="subtitle1">
-                          NomeParticipante
-                        </Typography>
-                        <Typography gutterBottom variant="subtitle1">
-                          TipodeNetworkParticipante
-                        </Typography>
-                        <Typography gutterBottom variant="subtitle1">
-                          Ocupaçaoparticipante
-                        </Typography>
-                        <Typography variant="body1" gutterBottom>
-                          If the surface flow of the runoff is diverted and concentrated by drains that create constant
-                          flows over the beach above the sea or river level, the beach will be eroded. If the surface flow
-                          of the runoff is diverted and concentrated by drains that create constant flows over the beach
-                          above the sea or river level, the beach will be eroded. If the surface flow of the runoff is diverted
-                          and concentrated by drains that create constant flows over the beach above the sea or river level,
-                          the beach will be eroded. If the surface flow of the runoff is diverted and concentrated by drains.
-                          (DescriçãoDoParticipante)
-                        </Typography>
-                        <Typography gutterBottom variant="subtitle1">
-                          telefone
-                        </Typography>
-                        <Typography gutterBottom variant="subtitle1">
-                          Linkedin
-                        </Typography>
-                        <Typography gutterBottom variant="subtitle1">
-                          Email
-                        </Typography>
-                      </Grid>
-                    </Grid>
-                  </Grid>
-                </Grid>
-              </Paper>
-            </Grid>
+            </Typography>
+
           </Grid>
-        </Container>
-      </main>
+          <Grid className={classes.presentCard} item xs={12}>
+            <Paper>
+              <Grid item xs={12} container direction="column" spacing={0} zeroMinWidth>
+                <Grid item>
+                  <ButtonBase className={classes.image}>
+                    <img className={classes.img} alt="complex" src="/static/images/grid/complex.jpg" />
+                  </ButtonBase>
+                </Grid>
+                <Typography gutterBottom variant="subtitle1">
+                  NomeParticipante
+                </Typography>
+                <Typography gutterBottom variant="subtitle1">
+                  TipodeNetworkParticipante
+                </Typography>
+                <Typography gutterBottom variant="subtitle1">
+                  Ocupaçaoparticipante
+                </Typography>
+                <Typography variant="body1" gutterBottom>
+                  If the surface flow of the runoff is diverted and concentrated by drains that create constant
+                  flows over the beach above the sea or river level, the beach will be eroded. If the surface flow
+                  of the runoff is diverted and concentrated by drains that create constant flows over the beach
+                  above the sea or river level, the beach will be eroded. If the surface flow of the runoff is diverted
+                  and concentrated by drains that create constant flows over the beach above the sea or river level,
+                  the beach will be eroded. If the surface flow of the runoff is diverted and concentrated by drains.
+                  (DescriçãoDoParticipante)
+                </Typography>
+                <Typography gutterBottom variant="subtitle1">
+                  telefone
+                </Typography>
+                <Typography gutterBottom variant="subtitle1">
+                  Linkedin
+                </Typography>
+                <Typography gutterBottom variant="subtitle1">
+                  Email
+                </Typography>
+              </Grid>
+            </Paper>
+          </Grid>
+        </Grid>
+      </Grid>
 
     </Grid>
   );
