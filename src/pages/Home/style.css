@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Yellowtail&display=swap');
+
 body{
-    background-color: #F2F8F4;
+    background-color: #f2f8f4;
     height: 100%;
 }
 
@@ -62,7 +64,6 @@ body{
 }
 
 .boxEntrar {
-    margin-top: 70px;
     flex-direction: row;
 }
 
@@ -74,10 +75,11 @@ body{
 
 .logar{
     background-color: #fff;
-    width: 500px;
+    flex: 50%;
     height: 400px;
     margin-top: 50px;
     float: left;
+    display: flex;
 }
 
 .boxLogoLogin{
@@ -117,7 +119,7 @@ body{
 
 .image{
     margin-left: 90px;
-    width: 500px;
+    flex: 50%;
     height: 368px;
     margin-top: 50px;
     float: left;

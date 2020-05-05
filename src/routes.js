@@ -10,6 +10,7 @@ export default function Routes() {
       <Switch>
         <Route path="/Home" component={Home} />
         <Route path="/MyCard" component={MyCard} />
+        <Route path="/" component={Home} />
       </Switch>
     </BrowserRouter>
   );
