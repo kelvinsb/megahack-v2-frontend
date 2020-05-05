@@ -7,7 +7,7 @@ export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/Home" component={Home} />
+        <Route path="/" component={Home} />
       </Switch>
     </BrowserRouter>
   );
